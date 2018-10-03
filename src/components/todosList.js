@@ -17,8 +17,8 @@ class Todoslist extends Component {
             <td>
                 <input  type="checkbox"  className="checkedBox"/>
             </td>
-            <td><button className="btn btn-sm btn-info" >Edit</button></td>
-            <td><button className="btn btn-sm btn-danger" > Delete</button></td>
+            <td><button onClick={()=>this.props.onEdit(todo)} className="btn btn-sm btn-info" >Edit</button></td>
+            <td><button onClick={()=>this.props.onDel(todo.id)} className="btn btn-sm btn-danger" > Delete</button></td>
         </tr>
         )
      })
